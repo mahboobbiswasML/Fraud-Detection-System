@@ -15,3 +15,12 @@ Model Deployment: Deploy the model as a REST API using FastAPI for real-time pre
 Monitoring: Implement a monitoring system to track model drift and retrain periodically.
 
 Conclution: Created an end to end model which will detect fraud.
+
+
+
+Key Notes:
+
+Dataset: The Kaggle Credit Card Fraud Detection dataset is anonymized, with PCA-transformed features and a 'Class' column (0 for legitimate, 1 for fraud). Synthetic data can be generated using libraries like SDV if needed.
+Imbalanced Data: SMOTE oversamples the minority class (fraud) to improve model performance.
+Evaluation Metrics: Precision and recall are critical due to the rarity of fraud cases. AUC-ROC ensures robust performance evaluation.
+Deployment: FastAPI enables real-time predictions, suitable for payment systems. Monitoring can be added using Prometheus or custom drift detection.
